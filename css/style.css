@@ -1,0 +1,304 @@
+/* Google Web Font */
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bangers'), url('http://themes.googleusercontent.com/font?kit=-VDbvoqMKwrRd8bOBvze3ALUuEpTyoUstqEm5AMlJo4') format('woff');
+}
+
+/* Based on Baseline CSS: 
+    Baseline - a designer framework
+    Copyright (C) 2009 Stephane Curzi, ProjetUrbain.com
+    Creative Commons Attribution-Share Alike 3.0 License
+    version 0.5
+    http://baselinecss.com/
+ */
+
+/******************** Reset ********************/
+html, body, div, span, a, img,
+h1, h2, h3, h4, h5, h6, hgroup, p,
+dl, dialog, dt, dd, ol, ul, li, 
+abbr, acronym, address, b, big, blockquote, 
+cite, code, del, dfn, em, i, ins, kbd, pre, q, 
+samp, tt, var, small, strong, sub, sup, 
+object, iframe, form, fieldset, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, nav, section,
+figure, menu, time, mark, audio, video						{ font-family: inherit; font-size: 100%; font-weight: inherit; font-style: inherit; vertical-align: baseline; white-space: normal; text-align: left; margin: 0; padding: 0; border: 0; outline: 0; background: transparent; }
+textarea													{ font-family: inherit; font-size: 100%; font-weight: normal; font-style: normal; white-space: normal; text-align: left; margin: 0; padding: 0; }
+article, aside, footer, header, nav, section,
+dialog, figure, hgroup, menu								{ display: block; }
+
+h1, h2, h3, h4, h5, h6										{ font-size: 100%; font-weight: normal; }
+del, ins													{ text-decoration: none; }
+ol, ul														{ list-style: none; }
+nav ul														{ list-style-type: none; }
+table														{ border-collapse: separate; border-spacing: 0; background-color: transparent; width: auto; height: auto; }
+:focus														{ outline: 0; }
+blockquote:before, blockquote:after, q:before, q:after		{ content: ""; }
+blockquote, q												{ quotes: "" ""; }
+input														{ margin: 0; }
+
+/******************** Base ********************/
+body											{ font-family: helvetica, arial, sans-serif; line-height: 1.5; background: white; color: black; }
+h1, h2, h3, h4, h5, h6							{ line-height: 1.2; }
+h4, h5, h6										{ font-weight: bold; }
+b, strong, caption, th, thead, dt, legend		{ font-weight: bold; }
+cite, dfn, em, i								{ font-style: italic; }
+code, kbd, samp, pre, tt, var					{ font-family: mono-space, monospace; }
+h1, h2, h3, h4, h5, h6							{ word-spacing: -0.125em; }
+p												{ word-spacing: 0.125em; hyphenate: auto; hyphenate-lines: 3; }
+p+p												{ text-indent: 1.5em; }
+p+p.no-indent									{ text-indent: 0; }
+pre												{ white-space: pre; }
+del												{ text-decoration: line-through; }
+mark											{ background: rgba(255, 255, 0, 0.4); padding: 0 .25em; }
+ins												{ color: #f00; }
+small, sup, sub									{ font-size: 80%; }
+big												{ font-size: 125%; line-height: 80%; }
+abbr, acronym									{ font-size: 85%; text-transform: uppercase; letter-spacing: .1em; }
+abbr[title], acronym[title], dfn[title]			{ border-bottom: 1px dotted black; cursor: help; }
+sup, sub										{ line-height: 0; }
+sup												{ vertical-align: super; }
+sub												{ vertical-align: sub; }
+blockquote										{ padding: 1.5em; }
+hr												{ border: none; background: #ddd; width: 100%; }
+ul, ol											{ margin-left: 1.5em; }
+ul												{ list-style: disc outside; }
+ol												{ list-style: decimal outside; }
+input, select, button							{ cursor: pointer; }
+table											{ font: inherit; width: 100%; }
+
+/* html 5 */
+article, aside, header, hgroup,
+nav, figure, section, footer					{ display: block; }
+
+/******************** Baseline grid: 13/18px ********************/
+body								{ font-size: 75%; line-height: 1.5; /*12/18*/ }
+
+h1, h2, h3, h4, h5, h6				{ position: relative; }
+h1, h2								{ line-height: 36px; margin-bottom: 18px; }
+h1, h2, h3, h4						{ margin-top: 18px; }
+h3, h4, h5, h6						{ line-height: 18px; }
+h1									{ font-size: 36px; top: 5px; }
+h2									{ font-size: 28px; top: 8px; }
+h3									{ font-size: 22px; top: 1px; }
+h4									{ font-size: 18px; top: 2px; }
+h5									{ font-size: 15px; top: 4px; }
+h6									{ font-size: 13px; top: 5px; }
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child						{ margin-top: 0; }
+
+p, pre, address						{ font-size: 13px; line-height: 18px; position: relative; top: 5px; }
+small								{ font-size: 11px; }
+abbr, code, kbd,
+samp, small, var					{ line-height: 15px; }
+ul, ol, dl, dialog					{ font-size: 13px; line-height: 18px; position: relative; top: 5px; margin-top: 18px; margin-bottom: 18px; }
+li ul, li ol, ul ul, ol ol			{ top: 0; margin-top: 0; margin-bottom: 0; }
+li h1, li h2, li h3,
+li h4, li h5, li h6,
+li p								{ top: 0; }
+form, legend, label					{ font-size: 13px; line-height: 18px; }
+legend								{ position: relative; top: 5px; }
+table								{ font-size: 13px; }
+caption								{ font-size: 13px; line-height: 18px; position: relative; }
+hr									{ position: relative; height: 4px; margin: 18px 0 14px 0; }
+
+/******************** Grid ********************/
+#page				{ width: 990px; position: relative; } /* 82.5em */
+#page:after			{ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Base column markup */
+.column				{ margin-left: 18px; display: block; float: left; } /* 1.5em */
+.colgroup			{ display: block; float: left; }
+.first				{ margin-left: 0; clear: left; }
+.gutter				{ margin-left: 18px; } /* 1.5em */
+.no-gutter			{ margin-left: 0; }
+.align-left			{ float: left; }
+.align-right		{ float: right; text-align: right; }
+.clear				{ float: left; }
+header,
+section				{ padding-bottom: 18px; }
+
+.leading			{ margin-bottom: 18px; } /* 1.5em */
+.noleading			{ margin-bottom: 0 !important; }		
+
+/* Base column width */
+.width1				{ width: 234px; } /* 19.5em */
+.width2				{ width: 486px; } /* 40.5em */
+.width3				{ width: 738px; } /* 61.5em */
+.width4				{ width: 990px; margin-left: 0 !important; } /* 82.5em */
+.full				{ display: block; float: left; width: 100%; margin-left: 0 !important; }
+
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||             Rockin' styles !                 ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+body {
+    color: #ccc;
+    width: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    margin: 0 auto;
+    padding: 0 18px;
+    width: 990px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.question {
+    text-align: center;
+}
+.answer {
+    padding-top: 2em;
+}
+.question, .answer {
+    font-family: 'Bangers', serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: none;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.2;    
+}
+
+/* Carbon fibre CSS3 Background:
+    http://leaverou.me/css3patterns/#carbon-fibre
+ */
+body {
+    background:
+      -webkit-radial-gradient(black 15%, transparent 16%) 0 0,
+      -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px,
+      -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+      -moz-radial-gradient(black 15%, transparent 16%) 0 0,
+      -moz-radial-gradient(black 15%, transparent 16%) 8px 8px,
+      -moz-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      -moz-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+      radial-gradient(black 15%, transparent 16%) 0 0,
+      radial-gradient(black 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+
+/* CSS Github ribbon based on: 
+    http://unindented.org/articles/2009/10/github-ribbon-using-css-transforms/
+ */
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  /* top left corner */
+  position: absolute;
+  right: -3em;
+  top: 2.5em;
+  /* 45 deg ccw rotation */
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /* shadow */
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
+}
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  /* shadow */
+  text-shadow: 0 0 0.5em #444;
+}
+
+/* Polaroid effect based on:
+    http://www.zurb.com/playground/css3-polaroids
+ */
+.polaroid {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    color: #333333;
+    display: inline;
+    float: left;
+    font-family: "Marker Felt",sans-serif;
+    font-size: 18px;
+    margin: 30px 30px 0;
+    padding: 10px 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+.polaroid:hover {
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 5;
+}
+.polaroid a {
+    text-decoration: none;
+}
+.polaroid a:after {
+    content: attr(title);
+}
+.polaroid img {
+    display: block;
+    margin-bottom: 12px;
+    width: 280px;
+}
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
