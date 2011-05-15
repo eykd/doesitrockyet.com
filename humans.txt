@@ -1,0 +1,59 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Webmaster: David Eyk
+  Site: eykd.net
+  Twitter: @eykd
+  Location: Vancouver, WA
+
+/* THANKS */
+  Names (& URL): 
+  Unknown person who gave us the cat with headphones.
+  Paul Irish
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: 
+   /* HTML, CSS */
+   - HTML5 Boilerplate - http://html5boilerplate.com/
+   - Baseline CSS - http://baselinecss.com/
+
+   /* JS */
+   - Modernizr - http://www.modernizr.com/
+   - $script - https://github.com/ded/script.js
+   - Bowser - https://github.com/ded/bowser
+   - Qwery - https://github.com/ded/qwery
+   - Bonzo - https://github.com/ded/bonzo
+   
+   
+   - A cat with headphones on.
+  Software: 
+   - Amazon CloudFront, your browser.
+  
+
+                                    
+                               -o/-                       
+                               +oo//-                     
+                              :ooo+//:                    
+                             -ooooo///-                   
+                             /oooooo//:                   
+                            :ooooooo+//-                  
+                           -+oooooooo///-                 
+           -://////////////+oooooooooo++////////////::    
+            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-   
+                     -:+ooooooooooooooooo+:://////:--     
+                       /ooooooooooooooooo+//////:-        
+                      -ooooooooooooooooooo////-           
+                      /ooooooooo+oooooooooo//:            
+                     :ooooooo+/::/+oooooooo+//-           
+                    -oooooo/::///////+oooooo///-          
+                    /ooo+::://////:---:/+oooo//:          
+                   -o+/::///////:-      -:/+o+//-         
+                   :-:///////:-            -:/://         
+                     -////:-                 --//:        
+                       --                       -:        
