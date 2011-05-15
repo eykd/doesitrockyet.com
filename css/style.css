@@ -155,6 +155,10 @@ body {
     width: 990px;
 }
 
+.ie .answer {
+    content: "No!";
+}
+
 footer {
     margin-top: 50px;
 }
