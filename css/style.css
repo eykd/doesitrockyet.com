@@ -197,6 +197,16 @@ body {
       -moz-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
       -moz-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background:
+      -o-radial-gradient(black 15%, transparent 16%) 0 0,
+      -o-radial-gradient(black 15%, transparent 16%) 8px 8px,
+      -o-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      -o-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
+      -ms-radial-gradient(black 15%, transparent 16%) 0 0,
+      -ms-radial-gradient(black 15%, transparent 16%) 8px 8px,
+      -ms-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      -ms-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background:
       radial-gradient(black 15%, transparent 16%) 0 0,
       radial-gradient(black 15%, transparent 16%) 8px 8px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
@@ -243,7 +253,10 @@ body {
 .polaroid {
     -moz-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
     transform: rotate(-2deg);
+
     background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
     color: #333333;
@@ -258,13 +271,23 @@ body {
     width: auto;
 }
 .polaroid:hover {
-    -moz-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
+    -moz-transform: scale(1.25) rotate(180deg);
+    -webkit-transform: scale(1.25) rotate(180deg);
+    -o-transform: scale(1.25) rotate(180deg);
+    -ms-transform: scale(1.25) rotate(180deg);
+    transform: scale(1.25) rotate(180deg);
+    
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;    
+
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 5;
 }
+
 .polaroid a {
     text-decoration: none;
 }
