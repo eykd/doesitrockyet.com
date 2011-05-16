@@ -1,0 +1,9 @@
+Things Yet Left Undone
+======================
+
+Bells and whistles:
+
+ - Add js routing for hashtags, for adding rocking effects.
+   - Allow for the answer to change (and not just the IE bit)
+   - Plenty of room for easter eggs here?
+ - Add CSS3 animation to spin the polaroid on click.
