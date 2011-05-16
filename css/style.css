@@ -251,11 +251,17 @@ body {
     http://www.zurb.com/playground/css3-polaroids
  */
 .polaroid {
-    -moz-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    -moz-transform: scale(1) rotate(-2deg) rotateY(0deg);
+    -webkit-transform: scale(1) rotate(-2deg) rotateY(0deg);
+    -o-transform: scale(1) rotate(-2deg) rotateY(0deg);
+    -ms-transform: scale(1) rotate(-2deg) rotateY(0deg);
+    transform: scale(1) rotate(-2deg) rotateY(0deg);
+    
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;    
 
     background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
@@ -271,11 +277,11 @@ body {
     width: auto;
 }
 .polaroid:hover {
-    -moz-transform: scale(1.25) rotate(180deg);
-    -webkit-transform: scale(1.25) rotate(180deg);
-    -o-transform: scale(1.25) rotate(180deg);
-    -ms-transform: scale(1.25) rotate(180deg);
-    transform: scale(1.25) rotate(180deg);
+    -moz-transform: scale(1.25) rotate(180deg) rotateY(0deg);
+    -webkit-transform: scale(1.25) rotate(180deg) rotateY(0deg);
+    -o-transform: scale(1.25) rotate(180deg) rotateY(0deg);
+    -ms-transform: scale(1.25) rotate(180deg) rotateY(0deg);
+    transform: scale(1.25) rotate(180deg) rotateY(0deg);
     
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
