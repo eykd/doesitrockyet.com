@@ -5,7 +5,7 @@ function $(selector) {
 $script.ready('main', function() {
     domReady(function() {
         if (!bowser.msie) {
-            $('.cat').attr('src', 'img/CatHeadphones_8.gif');
+            $('.cat').attr('src', 'http://cache.doesitrockyet.com/img/CatHeadphones_8.gif');
             $('.answer').text('Yes!');
         }
     });
